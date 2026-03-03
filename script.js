@@ -216,6 +216,6 @@ window.addEventListener('scroll', () => {
   else if (scrollY <= heroHeight && navVisible) hideBottomNav();
 });
 
-document.getElementById('gmapBtn').href = 'https://maps.app.goo.gl/XZkmqM8EtiQRAhgU8';
+document.getElementById('gmapBtn').href = 'https://maps.app.goo.gl/tjArwrCNnAWZuePj9';
 document.getElementById('gglCal').href = 'https://www.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Thaqif+Dan+Hani&details=Jemputan+ke+majlis+perkahwinan&location=KT+Ballroom+Shah+Alam&dates=20260606T113000/20260606T160000';
-document.getElementById('wazeBtn').href = 'https://ul.waze.com/ul?venue_id=66519070.665321776.636612&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location';
+document.getElementById('wazeBtn').href = 'https://ul.waze.com/ul?place=ChIJJYtEUAWvSjAR4EJ4s0i1uK8&ll=5.13756670%2C100.49616990&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location';
