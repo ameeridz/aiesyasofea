@@ -175,8 +175,8 @@ function handleSubmit(e) {
     });
 }
 
-// === Disable/Enable Bilangan Based on Kehadiran ===
-const hadirRadios = document.querySelectorAll('input[name="hadir"]');
+// === Disable/Enable Bilangan Based on Kean ===
+const Radios = document.querySelectorAll('input[name="kehadiran"]');
 const bilanganSelect = document.getElementById('bilangan');
 
 hadirRadios.forEach(radio => {
