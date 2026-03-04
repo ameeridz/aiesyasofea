@@ -194,37 +194,37 @@ hadirRadios.forEach(radio => {
 
 /***Nav Bar ***/
 // === Bottom Navigation Visibility ===
-const bottomNav = document.getElementById('bottomNav');
-const navLinks = bottomNav ? bottomNav.querySelectorAll('a') : [];
-let navVisible = false;
+//const bottomNav = document.getElementById('bottomNav');
+//const navLinks = bottomNav ? bottomNav.querySelectorAll('a') : [];
+//let navVisible = false;
 
-function showBottomNav() {
-    if(bottomNav){
-  bottomNav.style.transform = 'translateY(0)';
-}
-    navVisible = true;
-}
+//function showBottomNav() {
+ //   if(bottomNav){
+ // bottomNav.style.transform = 'translateY(0)';
+//}
+//    navVisible = true;
+//}
 
-function hideBottomNav() {
-    if(bottomNav){
-  bottomNav.style.transform = 'translateY(100%)';
-}
-    navVisible = false;
-}
+//function hideBottomNav() {
+//    if(bottomNav){
+//  bottomNav.style.transform = 'translateY(100%)';
+//}
+//    navVisible = false;
+//}
 
-window.addEventListener('scroll', () => {
+//window.addEventListener('scroll', () => {
 
-  if(!bottomNav) return;
+//  if(!bottomNav) return;
 
-  const scrollY = window.scrollY;
-  const heroHeight = window.innerHeight * 0.4;
+//  const scrollY = window.scrollY;
+//  const heroHeight = window.innerHeight * 0.4;
 
-  if (scrollY > heroHeight && !navVisible)
-    showBottomNav();
-  else if (scrollY <= heroHeight && navVisible)
+  //if (scrollY > heroHeight && !navVisible)
+ //   showBottomNav();
+ // else if (scrollY <= heroHeight && navVisible)
     hideBottomNav();
-
-});
+//
+//});
 
 document.getElementById('gmapBtn').href = 'https://maps.app.goo.gl/tjArwrCNnAWZuePj9';
 document.getElementById('gglCal').href = 'https://www.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Thaqif+Dan+Hani&details=Jemputan+ke+majlis+perkahwinan&location=KT+Ballroom+Shah+Alam&dates=20260606T113000/20260606T160000';
