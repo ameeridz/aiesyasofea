@@ -194,6 +194,7 @@ hadirRadios.forEach(radio => {
 
 /***Nav Bar ***/
 // === Bottom Navigation Visibility ===
+<<<<<<< HEAD
 const bottomNav = document.getElementById('bottomNav');
 const navLinks = bottomNav.querySelectorAll('a');
 let navVisible = false;
@@ -215,6 +216,39 @@ window.addEventListener('scroll', () => {
   if (scrollY > heroHeight && !navVisible) showBottomNav();
   else if (scrollY <= heroHeight && navVisible) hideBottomNav();
 });
+=======
+//const bottomNav = document.getElementById('bottomNav');
+//const navLinks = bottomNav ? bottomNav.querySelectorAll('a') : [];
+//let navVisible = false;
+
+//function showBottomNav() {
+ //   if(bottomNav){
+ // bottomNav.style.transform = 'translateY(0)';
+//}
+//    navVisible = true;
+//}
+
+//function hideBottomNav() {
+//    if(bottomNav){
+//  bottomNav.style.transform = 'translateY(100%)';
+//}
+//    navVisible = false;
+//}
+
+//window.addEventListener('scroll', () => {
+
+//  if(!bottomNav) return;
+
+//  const scrollY = window.scrollY;
+//  const heroHeight = window.innerHeight * 0.4;
+
+  //if (scrollY > heroHeight && !navVisible)
+ //   showBottomNav();
+ // else if (scrollY <= heroHeight && navVisible)
+    hideBottomNav();
+//
+//});
+>>>>>>> parent of 7147de9 (Revert "Update script.js")
 
 document.getElementById('gmapBtn').href = 'https://maps.app.goo.gl/tjArwrCNnAWZuePj9';
 document.getElementById('gglCal').href = 'https://www.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Thaqif+Dan+Hani&details=Jemputan+ke+majlis+perkahwinan&location=KT+Ballroom+Shah+Alam&dates=20260606T113000/20260606T160000';
