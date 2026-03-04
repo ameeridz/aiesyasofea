@@ -245,7 +245,7 @@ window.addEventListener('scroll', () => {
   //if (scrollY > heroHeight && !navVisible)
  //   showBottomNav();
  // else if (scrollY <= heroHeight && navVisible)
-    hideBottomNav();
+    //hideBottomNav();
 //
 //});
 >>>>>>> parent of 7147de9 (Revert "Update script.js")
@@ -253,3 +253,34 @@ window.addEventListener('scroll', () => {
 document.getElementById('gmapBtn').href = 'https://maps.app.goo.gl/tjArwrCNnAWZuePj9';
 document.getElementById('gglCal').href = 'https://www.google.com/calendar/render?action=TEMPLATE&text=Majlis+Perkahwinan+Thaqif+Dan+Hani&details=Jemputan+ke+majlis+perkahwinan&location=KT+Ballroom+Shah+Alam&dates=20260606T113000/20260606T160000';
 document.getElementById('wazeBtn').href = 'https://ul.waze.com/ul?place=ChIJJYtEUAWvSjAR4EJ4s0i1uK8&ll=5.13756670%2C100.49616990&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location';
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const bottomNav = document.getElementById('bottomNav');
+  if (!bottomNav) return;
+
+  let navVisible = false;
+
+  function showBottomNav() {
+    bottomNav.style.transform = 'translateY(0)';
+    navVisible = true;
+  }
+
+  function hideBottomNav() {
+    bottomNav.style.transform = 'translateY(100%)';
+    navVisible = false;
+  }
+
+  window.addEventListener('scroll', () => {
+
+    const scrollY = window.scrollY;
+    const heroHeight = window.innerHeight * 0.4;
+
+    if (scrollY > heroHeight && !navVisible)
+      showBottomNav();
+    else if (scrollY <= heroHeight && navVisible)
+      hideBottomNav();
+
+  });
+
+});
