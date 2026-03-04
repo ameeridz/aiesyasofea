@@ -82,7 +82,7 @@ window.addEventListener('load', () => {
 
 
 /*** List Ucapan */
-const SCRIPT_ENDPOINT = "https://script.google.com/macros/s/AKfycbyVjbx2J20d4LDvKSLiOoL6alshoTF-pKhM02D89rRSAQsmmisrLLi8WdkEeXp7bCwh";
+const SCRIPT_ENDPOINT = "https://script.google.com/macros/s/AKfycbyVjbx2J20d4LDvKSLiOoL6alshoTF-pKhM02D89rRSAQsmmisrLLi8WdkEeXp7bCwh/exec";
 
 async function loadUcapan() {
     const list = document.getElementById('ucapanList');
